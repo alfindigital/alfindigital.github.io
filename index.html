@@ -2,282 +2,390 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alfin — Software &amp; AI Developer</title>
-<meta name="description" content="Alfin (alfindigital): open-source web tools, market-data utilities and AI developer kits. Live from GitHub.">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#f9fafc">
-<meta property="og:title" content="Alfin — Software &amp; AI Developer">
-<meta property="og:description" content="Open-source web tools, market-data utilities and AI developer kits.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alfin | Software and AI developer</title>
+<meta name="description" content="Alfin (alfindigital): small, fast web tools, market-data dashboards and kits for AI coding agents. Real products, live GitHub numbers.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0d0f" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Alfin | Software and AI developer">
+<meta property="og:description" content="Small, fast web tools and market-data dashboards, built in Indonesia.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://alfin.is-a.dev/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231d1d1f'/%3E%3Cpath d='M9 23 16 9l7 14M12 19h8' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body>
-<a class="skip" href="#work">Skip to work</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-magnifying-glass" viewBox="0 0 256 256"><path fill="currentColor" d="m229.66 218.34l-50.07-50.06a88.11 88.11 0 1 0-11.31 11.31l50.06 50.07a8 8 0 0 0 11.32-11.32M40 112a72 72 0 1 1 72 72a72.08 72.08 0 0 1-72-72"/></symbol><symbol id="i-sun" viewBox="0 0 256 256"><path fill="currentColor" d="M120 40V16a8 8 0 0 1 16 0v24a8 8 0 0 1-16 0m72 88a64 64 0 1 1-64-64a64.07 64.07 0 0 1 64 64m-16 0a48 48 0 1 0-48 48a48.05 48.05 0 0 0 48-48M58.34 69.66a8 8 0 0 0 11.32-11.32l-16-16a8 8 0 0 0-11.32 11.32Zm0 116.68l-16 16a8 8 0 0 0 11.32 11.32l16-16a8 8 0 0 0-11.32-11.32M192 72a8 8 0 0 0 5.66-2.34l16-16a8 8 0 0 0-11.32-11.32l-16 16A8 8 0 0 0 192 72m5.66 114.34a8 8 0 0 0-11.32 11.32l16 16a8 8 0 0 0 11.32-11.32ZM48 128a8 8 0 0 0-8-8H16a8 8 0 0 0 0 16h24a8 8 0 0 0 8-8m80 80a8 8 0 0 0-8 8v24a8 8 0 0 0 16 0v-24a8 8 0 0 0-8-8m112-88h-24a8 8 0 0 0 0 16h24a8 8 0 0 0 0-16"/></symbol><symbol id="i-moon" viewBox="0 0 256 256"><path fill="currentColor" d="M233.54 142.23a8 8 0 0 0-8-2a88.08 88.08 0 0 1-109.8-109.8a8 8 0 0 0-10-10a104.84 104.84 0 0 0-52.91 37A104 104 0 0 0 136 224a103.1 103.1 0 0 0 62.52-20.88a104.84 104.84 0 0 0 37-52.91a8 8 0 0 0-1.98-7.98m-44.64 48.11A88 88 0 0 1 65.66 67.11a89 89 0 0 1 31.4-26A106 106 0 0 0 96 56a104.11 104.11 0 0 0 104 104a106 106 0 0 0 14.92-1.06a89 89 0 0 1-26.02 31.4"/></symbol><symbol id="i-github-logo" viewBox="0 0 256 256"><path fill="currentColor" d="M208.31 75.68A59.78 59.78 0 0 0 202.93 28a8 8 0 0 0-6.93-4a59.75 59.75 0 0 0-48 24h-24a59.75 59.75 0 0 0-48-24a8 8 0 0 0-6.93 4a59.78 59.78 0 0 0-5.38 47.68A58.14 58.14 0 0 0 56 104v8a56.06 56.06 0 0 0 48.44 55.47A39.8 39.8 0 0 0 96 192v8H72a24 24 0 0 1-24-24a40 40 0 0 0-40-40a8 8 0 0 0 0 16a24 24 0 0 1 24 24a40 40 0 0 0 40 40h24v16a8 8 0 0 0 16 0v-40a24 24 0 0 1 48 0v40a8 8 0 0 0 16 0v-40a39.8 39.8 0 0 0-8.44-24.53A56.06 56.06 0 0 0 216 112v-8a58.14 58.14 0 0 0-7.69-28.32M200 112a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40v-8a41.74 41.74 0 0 1 6.9-22.48a8 8 0 0 0 1.1-7.69a43.8 43.8 0 0 1 .79-33.58a43.88 43.88 0 0 1 32.32 20.06a8 8 0 0 0 6.71 3.69h32.35a8 8 0 0 0 6.74-3.69a43.87 43.87 0 0 1 32.32-20.06a43.8 43.8 0 0 1 .77 33.58a8.09 8.09 0 0 0 1 7.65a41.7 41.7 0 0 1 7 22.52Z"/></symbol><symbol id="i-envelope-simple" viewBox="0 0 256 256"><path fill="currentColor" d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-20.57 16L128 133.15L52.57 64ZM216 192H40V74.19l82.59 75.71a8 8 0 0 0 10.82 0L216 74.19z"/></symbol><symbol id="i-copy" viewBox="0 0 256 256"><path fill="currentColor" d="M216 32H88a8 8 0 0 0-8 8v40H40a8 8 0 0 0-8 8v128a8 8 0 0 0 8 8h128a8 8 0 0 0 8-8v-40h40a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8m-56 176H48V96h112Zm48-48h-32V88a8 8 0 0 0-8-8H96V48h112Z"/></symbol><symbol id="i-check" viewBox="0 0 256 256"><path fill="currentColor" d="m229.66 77.66l-128 128a8 8 0 0 1-11.32 0l-56-56a8 8 0 0 1 11.32-11.32L96 188.69L218.34 66.34a8 8 0 0 1 11.32 11.32"/></symbol><symbol id="i-arrow-up-right" viewBox="0 0 256 256"><path fill="currentColor" d="M200 64v104a8 8 0 0 1-16 0V83.31L69.66 197.66a8 8 0 0 1-11.32-11.32L172.69 72H88a8 8 0 0 1 0-16h104a8 8 0 0 1 8 8"/></symbol><symbol id="i-arrow-right" viewBox="0 0 256 256"><path fill="currentColor" d="m221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32"/></symbol><symbol id="i-calendar-blank" viewBox="0 0 256 256"><path fill="currentColor" d="M208 32h-24v-8a8 8 0 0 0-16 0v8H88v-8a8 8 0 0 0-16 0v8H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16M72 48v8a8 8 0 0 0 16 0v-8h80v8a8 8 0 0 0 16 0v-8h24v32H48V48Zm136 160H48V96h160z"/></symbol><symbol id="i-clock" viewBox="0 0 256 256"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88m64-88a8 8 0 0 1-8 8h-56a8 8 0 0 1-8-8V72a8 8 0 0 1 16 0v48h48a8 8 0 0 1 8 8"/></symbol><symbol id="i-flag" viewBox="0 0 256 256"><path fill="currentColor" d="M42.76 50A8 8 0 0 0 40 56v168a8 8 0 0 0 16 0v-44.23c26.79-21.16 49.87-9.75 76.45 3.41c16.4 8.11 34.06 16.85 53 16.85c13.93 0 28.54-4.75 43.82-18a8 8 0 0 0 2.76-6V56a8 8 0 0 0-13.27-6c-28 24.23-51.72 12.49-79.21-1.12C111.07 34.76 78.78 18.79 42.76 50M216 172.25c-26.79 21.16-49.87 9.74-76.45-3.41c-25-12.35-52.81-26.13-83.55-8.4V59.79c26.79-21.16 49.87-9.75 76.45 3.4c25 12.35 52.82 26.13 83.55 8.4Z"/></symbol><symbol id="i-hash" viewBox="0 0 256 256"><path fill="currentColor" d="M224 88h-48.6l8.47-46.57a8 8 0 0 0-15.74-2.86l-9 49.43H111.4l8.47-46.57a8 8 0 0 0-15.74-2.86L95.14 88H48a8 8 0 0 0 0 16h44.23l-8.73 48H32a8 8 0 0 0 0 16h48.6l-8.47 46.57a8 8 0 0 0 6.44 9.3A8 8 0 0 0 80 224a8 8 0 0 0 7.86-6.57l9-49.43h47.74l-8.47 46.57a8 8 0 0 0 6.44 9.3a8 8 0 0 0 1.43.13a8 8 0 0 0 7.86-6.57l9-49.43H208a8 8 0 0 0 0-16h-44.23l8.73-48H224a8 8 0 0 0 0-16m-76.5 64H99.77l8.73-48h47.73Z"/></symbol><symbol id="i-chart-line-up" viewBox="0 0 256 256"><path fill="currentColor" d="M232 208a8 8 0 0 1-8 8H32a8 8 0 0 1-8-8V48a8 8 0 0 1 16 0v108.69l50.34-50.35a8 8 0 0 1 11.32 0L128 132.69L180.69 80H160a8 8 0 0 1 0-16h40a8 8 0 0 1 8 8v40a8 8 0 0 1-16 0V91.31l-58.34 58.35a8 8 0 0 1-11.32 0L96 123.31l-56 56V200h184a8 8 0 0 1 8 8"/></symbol><symbol id="i-calculator" viewBox="0 0 256 256"><path fill="currentColor" d="M80 120h96a8 8 0 0 0 8-8V64a8 8 0 0 0-8-8H80a8 8 0 0 0-8 8v48a8 8 0 0 0 8 8m8-48h80v32H88Zm112-48H56a16 16 0 0 0-16 16v176a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16V40a16 16 0 0 0-16-16m0 192H56V40h144Zm-100-68a12 12 0 1 1-12-12a12 12 0 0 1 12 12m40 0a12 12 0 1 1-12-12a12 12 0 0 1 12 12m40 0a12 12 0 1 1-12-12a12 12 0 0 1 12 12m-80 40a12 12 0 1 1-12-12a12 12 0 0 1 12 12m40 0a12 12 0 1 1-12-12a12 12 0 0 1 12 12m40 0a12 12 0 1 1-12-12a12 12 0 0 1 12 12"/></symbol><symbol id="i-check-square" viewBox="0 0 256 256"><path fill="currentColor" d="M173.66 98.34a8 8 0 0 1 0 11.32l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 0M224 48v160a16 16 0 0 1-16 16H48a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16h160a16 16 0 0 1 16 16m-16 160V48H48v160z"/></symbol><symbol id="i-timer" viewBox="0 0 256 256"><path fill="currentColor" d="M128 40a96 96 0 1 0 96 96a96.11 96.11 0 0 0-96-96m0 176a80 80 0 1 1 80-80a80.09 80.09 0 0 1-80 80m45.66-125.66a8 8 0 0 1 0 11.32l-40 40a8 8 0 0 1-11.32-11.32l40-40a8 8 0 0 1 11.32 0M96 16a8 8 0 0 1 8-8h48a8 8 0 0 1 0 16h-48a8 8 0 0 1-8-8"/></symbol><symbol id="i-note-pencil" viewBox="0 0 256 256"><path fill="currentColor" d="m229.66 58.34l-32-32a8 8 0 0 0-11.32 0l-96 96A8 8 0 0 0 88 128v32a8 8 0 0 0 8 8h32a8 8 0 0 0 5.66-2.34l96-96a8 8 0 0 0 0-11.32M124.69 152H104v-20.69l64-64L188.69 88ZM200 76.69L179.31 56L192 43.31L212.69 64ZM224 128v80a16 16 0 0 1-16 16H48a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16h80a8 8 0 0 1 0 16H48v160h160v-80a8 8 0 0 1 16 0"/></symbol><symbol id="i-receipt" viewBox="0 0 256 256"><path fill="currentColor" d="M72 104a8 8 0 0 1 8-8h96a8 8 0 0 1 0 16H80a8 8 0 0 1-8-8m8 40h96a8 8 0 0 0 0-16H80a8 8 0 0 0 0 16m152-88v152a8 8 0 0 1-11.58 7.15L192 200.94l-28.42 14.21a8 8 0 0 1-7.16 0L128 200.94l-28.42 14.21a8 8 0 0 1-7.16 0L64 200.94l-28.42 14.21A8 8 0 0 1 24 208V56a16 16 0 0 1 16-16h176a16 16 0 0 1 16 16m-16 0H40v139.06l20.42-10.22a8 8 0 0 1 7.16 0L96 199.06l28.42-14.22a8 8 0 0 1 7.16 0L160 199.06l28.42-14.22a8 8 0 0 1 7.16 0L216 195.06Z"/></symbol><symbol id="i-qr-code" viewBox="0 0 256 256"><path fill="currentColor" d="M104 40H56a16 16 0 0 0-16 16v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m0 64H56V56h48zm0 32H56a16 16 0 0 0-16 16v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16v-48a16 16 0 0 0-16-16m0 64H56v-48h48zm96-160h-48a16 16 0 0 0-16 16v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m0 64h-48V56h48zm-64 72v-32a8 8 0 0 1 16 0v32a8 8 0 0 1-16 0m80-16a8 8 0 0 1-8 8h-24v40a8 8 0 0 1-8 8h-32a8 8 0 0 1 0-16h24v-56a8 8 0 0 1 16 0v8h24a8 8 0 0 1 8 8m0 32v16a8 8 0 0 1-16 0v-16a8 8 0 0 1 16 0"/></symbol><symbol id="i-key" viewBox="0 0 256 256"><path fill="currentColor" d="M216.57 39.43a80 80 0 0 0-132.66 81.35L28.69 176A15.86 15.86 0 0 0 24 187.31V216a16 16 0 0 0 16 16h32a8 8 0 0 0 8-8v-16h16a8 8 0 0 0 8-8v-16h16a8 8 0 0 0 5.66-2.34l9.56-9.57A79.7 79.7 0 0 0 160 176h.1a80 80 0 0 0 56.47-136.57M224 98.1c-1.09 34.09-29.75 61.86-63.89 61.9H160a63.7 63.7 0 0 1-23.65-4.51a8 8 0 0 0-8.84 1.68L116.69 168H96a8 8 0 0 0-8 8v16H72a8 8 0 0 0-8 8v16H40v-28.69l58.83-58.82a8 8 0 0 0 1.68-8.84A63.7 63.7 0 0 1 96 95.92c0-34.14 27.81-62.8 61.9-63.89A64 64 0 0 1 224 98.1M192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12"/></symbol><symbol id="i-chat-text" viewBox="0 0 256 256"><path fill="currentColor" d="M216 48H40a16 16 0 0 0-16 16v160a15.85 15.85 0 0 0 9.24 14.5A16.1 16.1 0 0 0 40 240a15.9 15.9 0 0 0 10.25-3.78l.09-.07L83 208h133a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16m0 144H80a8 8 0 0 0-5.23 1.95L40 224V64h176ZM88 112a8 8 0 0 1 8-8h64a8 8 0 0 1 0 16H96a8 8 0 0 1-8-8m0 32a8 8 0 0 1 8-8h64a8 8 0 1 1 0 16H96a8 8 0 0 1-8-8"/></symbol><symbol id="i-cooking-pot" viewBox="0 0 256 256"><path fill="currentColor" d="M88 48V16a8 8 0 0 1 16 0v32a8 8 0 0 1-16 0m40 8a8 8 0 0 0 8-8V16a8 8 0 0 0-16 0v32a8 8 0 0 0 8 8m32 0a8 8 0 0 0 8-8V16a8 8 0 0 0-16 0v32a8 8 0 0 0 8 8m92.8 46.4L224 124v60a32 32 0 0 1-32 32H64a32 32 0 0 1-32-32v-60L3.2 102.4a8 8 0 0 1 9.6-12.8L32 104V80a8 8 0 0 1 8-8h176a8 8 0 0 1 8 8v24l19.2-14.4a8 8 0 0 1 9.6 12.8M208 88H48v96a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16Z"/></symbol><symbol id="i-toolbox" viewBox="0 0 256 256"><path fill="currentColor" d="M224 64h-48v-8a24 24 0 0 0-24-24h-48a24 24 0 0 0-24 24v8H32a16 16 0 0 0-16 16v112a16 16 0 0 0 16 16h192a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16M96 56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v8H96Zm128 24v32h-32v-8a8 8 0 0 0-16 0v8H80v-8a8 8 0 0 0-16 0v8H32V80Zm0 112H32v-64h32v8a8 8 0 0 0 16 0v-8h96v8a8 8 0 0 0 16 0v-8h32z"/></symbol><symbol id="i-file-text" viewBox="0 0 256 256"><path fill="currentColor" d="m213.66 82.34l-56-56A8 8 0 0 0 152 24H56a16 16 0 0 0-16 16v176a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16V88a8 8 0 0 0-2.34-5.66M160 51.31L188.69 80H160ZM200 216H56V40h88v48a8 8 0 0 0 8 8h48zm-32-80a8 8 0 0 1-8 8H96a8 8 0 0 1 0-16h64a8 8 0 0 1 8 8m0 32a8 8 0 0 1-8 8H96a8 8 0 0 1 0-16h64a8 8 0 0 1 8 8"/></symbol><symbol id="i-file-code" viewBox="0 0 256 256"><path fill="currentColor" d="M181.66 146.34a8 8 0 0 1 0 11.32l-24 24a8 8 0 0 1-11.32-11.32L164.69 152l-18.35-18.34a8 8 0 0 1 11.32-11.32Zm-72-24a8 8 0 0 0-11.32 0l-24 24a8 8 0 0 0 0 11.32l24 24a8 8 0 0 0 11.32-11.32L91.31 152l18.35-18.34a8 8 0 0 0 0-11.32M216 88v128a16 16 0 0 1-16 16H56a16 16 0 0 1-16-16V40a16 16 0 0 1 16-16h96a8 8 0 0 1 5.66 2.34l56 56A8 8 0 0 1 216 88m-56-8h28.69L160 51.31Zm40 136V96h-48a8 8 0 0 1-8-8V40H56v176z"/></symbol></svg>
+<a class="skip" href="#work">Skip to projects</a>
 
-<header class="nav">
-  <div class="wrap">
-    <a class="brand" href="#top">alfindigital</a>
-    <nav class="nav-links" aria-label="Sections">
-      <a href="#work">Work</a>
-      <a href="#activity">Activity</a>
-      <a href="#approach">Approach</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="cmdk" type="button" id="open-palette" aria-haspopup="dialog" aria-label="Open command menu">
-      <span>Search</span><kbd id="kbd-hint">Ctrl K</kbd>
-    </button>
-  </div>
+<header class="nav" id="nav">
+  <a class="brand" href="#top">Alfin</a>
+  <nav class="nav-links" id="nav-links" aria-label="Sections">
+    <span class="t-tabs-pill" aria-hidden="true"></span>
+    <a href="#work">Work</a>
+    <a href="#activity">Activity</a>
+    <a href="#try">Try</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="icon-btn" id="open-palette" type="button" aria-label="Open command menu" aria-haspopup="dialog"><svg class="ic" aria-hidden="true"><use href="#i-magnifying-glass"/></svg></button>
+  <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+    <span class="t-icon-swap" id="theme-swap" data-state="a"><span class="t-icon" data-icon="a"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg></span><span class="t-icon" data-icon="b"><svg class="ic" aria-hidden="true"><use href="#i-sun"/></svg></span></span>
+  </button>
 </header>
 
 <main id="top">
   <section class="hero">
     <div class="wrap">
-      <div>
-        <p class="eyebrow label"><span>Developer &middot; Indonesia</span></p>
-        <h1>Software and AI tools that ship.</h1>
-        <p class="lede">I'm Alfin. I build offline-first web tools, market-data utilities and developer kits for AI coding agents, and I publish them on GitHub.</p>
-        <div class="cta">
+      <div class="t-stagger" id="hero">
+        <p class="kicker t-stagger-line t-stagger-line--1">Software and AI developer, Indonesia</p>
+        <h1 class="t-stagger-line t-stagger-line--2">Small tools that open fast.</h1>
+        <p class="lede t-stagger-line t-stagger-line--3">I'm Alfin. I build offline-first web tools, market-data dashboards and kits for AI coding agents, and I publish them on GitHub.</p>
+        <div class="cta t-stagger-line t-stagger-line--4">
           <a class="btn btn--primary" href="#work">See the work</a>
-          <a class="btn" href="https://github.com/alfindigital" rel="noopener">github.com/alfindigital</a>
+          <a class="btn btn--quiet t-learn" href="https://github.com/alfindigital" rel="noopener">GitHub <span class="t-learn-chevron"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
         </div>
-      </div>
-
-      <figure class="code-card" style="margin:0" aria-label="Live response from the GitHub API for this profile">
-        <div class="code-bar">
-          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span class="file">GET api.github.com/users/alfindigital</span>
-          <span class="status" id="api-status" data-state="snapshot">SNAPSHOT</span>
-        </div>
-        <pre class="code-body" id="api-body"><span class="ln"><span class="t-dim">{</span></span><span class="ln">  <span class="t-key">"login"</span>: <span class="t-str" data-k="login">"alfindigital"</span>,</span><span class="ln">  <span class="t-key">"name"</span>: <span class="t-str" data-k="name">"Muhammad Alfin Assyidiq"</span>,</span><span class="ln">  <span class="t-key">"bio"</span>: <span class="t-str" data-k="bio">"Software &amp; AI Creator"</span>,</span><span class="ln">  <span class="t-key">"location"</span>: <span class="t-str" data-k="location">"Indonesia"</span>,</span><span class="ln">  <span class="t-key">"public_repos"</span>: <span class="t-num" data-k="public_repos">43</span>,</span><span class="ln">  <span class="t-key">"followers"</span>: <span class="t-num" data-k="followers">7</span>,</span><span class="ln">  <span class="t-key">"created_at"</span>: <span class="t-str" data-k="created_at">"2018-12-14"</span></span><span class="ln"><span class="t-dim">}</span></span></pre>
-      </figure>
-    </div>
-  </section>
-
-  <section class="rule-top" aria-label="GitHub numbers" style="padding:40px 0">
-    <div class="wrap">
-      <div class="stats reveal">
-        <div class="stat"><b data-stat="public_repos">43</b><span class="label">Public repos</span></div>
-        <div class="stat"><b data-stat="followers">7</b><span class="label">Followers</span></div>
-        <div class="stat"><b data-stat="since">2018</b><span class="label">On GitHub since</span></div>
-        <div class="stat"><b data-stat="contribs">—</b><span class="label">Contributions, last year</span></div>
       </div>
     </div>
   </section>
 
-  <section id="work" class="rule-top">
+  <section class="showcase" id="showcase" aria-label="Products, with screenshots of the live sites">
     <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <h2>Selected work</h2>
+      <div class="stage reveal" id="stage">
+        <figure class="shot is-active" id="shot-fokusin" role="tabpanel" aria-labelledby="tab-fokusin"
+          data-title="Fokusin" data-desc="A Pomodoro timer in Bahasa Indonesia. It works offline, needs no account, and the whole app is 154 KB of vanilla JavaScript." data-live="https://fokusin.pages.dev" data-repo="https://github.com/alfindigital/fokusin">
+          <img src="assets/fokusin.jpg" width="1280" height="800" alt="Screenshot of Fokusin: a dark Pomodoro timer showing 25:00 with a Start button." decoding="async">
+        </figure>
+        <figure class="shot" id="shot-des" role="tabpanel" aria-labelledby="tab-des"
+          data-title="Daftar Efek Syariah" data-desc="A dashboard of the IDX Sharia-compliant securities list, 2016 to 2026, with a stock tracker you can search by ticker." data-live="https://des.lotmetrik.my.id" data-repo="https://github.com/alfindigital/lotmetrik-des">
+          <img src="assets/des.jpg" width="1280" height="808" alt="Screenshot of Daftar Efek Syariah: a chart of the number of IDX Sharia-compliant stocks from 2016 to 2026." loading="lazy" decoding="async">
+        </figure>
+        <figure class="shot" id="shot-makerheat" role="tabpanel" aria-labelledby="tab-makerheat"
+          data-title="MakerHeat" data-desc="Paste a DEX contract and see which addresses carried the observed volume. Descriptive only, no verdicts." data-live="https://makerheat.vercel.app" data-repo="https://github.com/alfindigital/makerheat">
+          <img src="assets/makerheat.jpg" width="1280" height="800" alt="Screenshot of MakerHeat: a dark page with a contract address scanner." loading="lazy" decoding="async">
+        </figure>
+        <figure class="shot" id="shot-verdex" role="tabpanel" aria-labelledby="tab-verdex"
+          data-title="Verdex" data-desc="Paste a contract or ticker and get a verdict where every claim traces to a hashed CoinMarketCap receipt." data-live="https://verdex-alpha.vercel.app" data-repo="https://github.com/alfindigital/verdex">
+          <img src="assets/verdex.jpg" width="1280" height="808" alt="Screenshot of Verdex: a dark scanner page with verdict counts and recorded cases." loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <div class="showcase-ctl">
+        <div class="tabs-scroll">
+          <div class="t-tabs" id="shot-tabs" role="tablist" aria-label="Choose a product">
+            <span class="t-tabs-pill" aria-hidden="true"></span>
+          <button class="t-tab" role="tab" id="tab-fokusin" aria-selected="true" aria-controls="shot-fokusin" data-i="0">Fokusin</button>
+          <button class="t-tab" role="tab" id="tab-des" aria-selected="false" aria-controls="shot-des" data-i="1">DES</button>
+          <button class="t-tab" role="tab" id="tab-makerheat" aria-selected="false" aria-controls="shot-makerheat" data-i="2">MakerHeat</button>
+          <button class="t-tab" role="tab" id="tab-verdex" aria-selected="false" aria-controls="shot-verdex" data-i="3">Verdex</button>
+          </div>
         </div>
-        <p>Public repositories, straight from GitHub. Most are PWAs that run in the browser with no account.</p>
-      </div>
-      <div class="filters" role="group" aria-label="Filter projects">
-        <button class="chip" type="button" data-filter="all" aria-pressed="true">All<span class="n">22</span></button>
-        <button class="chip" type="button" data-filter="markets" aria-pressed="false">Markets<span class="n">7</span></button>
-        <button class="chip" type="button" data-filter="daily" aria-pressed="false">Daily tools<span class="n">10</span></button>
-        <button class="chip" type="button" data-filter="ai" aria-pressed="false">AI &amp; dev<span class="n">5</span></button>
-      </div>
-      <div class="grid" id="grid">
-      <article class="card" data-cat="markets" data-repo="adimology">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/adimology" rel="noopener">adimology</a></h3>
-        <p>Web app that analyses IDX stock target prices from broker transaction data. Algorithm credit: Adi Sucipto's methodology.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/adimology" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="markets" data-repo="radar-x">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/radar-x" rel="noopener">radar-x</a></h3>
-        <p>Position map of IDX smart money (insiders, institutions, foreign) for swing traders.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/radar-x" rel="noopener">Source</a><a class="link" href="https://radar-x-beta.vercel.app" rel="noopener">Live</a></div>
-      </article>
-      <article class="card" data-cat="markets" data-repo="right-issue">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/right-issue" rel="noopener">right-issue</a></h3>
-        <p>Rights-issue (HMETD) calculator for IDX stocks. Bilingual.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/right-issue" rel="noopener">Source</a><a class="link" href="https://lotmetrik.my.id" rel="noopener">Live</a></div>
-      </article>
-      <article class="card" data-cat="markets" data-repo="lotmetrik-des">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="HTML"></i>HTML</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/lotmetrik-des" rel="noopener">lotmetrik-des</a></h3>
-        <p>Dashboard of the IDX Sharia-compliant securities list (DES), 2016 to 2026.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/lotmetrik-des" rel="noopener">Source</a><a class="link" href="https://des.lotmetrik.my.id" rel="noopener">Live</a></div>
-      </article>
-      <article class="card" data-cat="markets" data-repo="idx-avg">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="Python"></i>Python</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/idx-avg" rel="noopener">idx-avg</a></h3>
-        <p>Averaging calculator for IDX stocks. Mobile-first PWA.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/idx-avg" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="markets" data-repo="scalc">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/scalc" rel="noopener">scalc</a></h3>
-        <p>Simple IDX stock calculator: lots, P&amp;L, break-even. Offline PWA.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/scalc" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="markets" data-repo="ddcal">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/ddcal" rel="noopener">ddcal</a></h3>
-        <p>Drawdown recovery calculator for traders. Offline PWA.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/ddcal" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="daily" data-repo="beres">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="JavaScript"></i>JavaScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/beres" rel="noopener">beres</a></h3>
-        <p>Indonesian to-do list. Type a sentence, get a task. Offline, no account, zero dependencies.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/beres" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="daily" data-repo="fokusin">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="JavaScript"></i>JavaScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/fokusin" rel="noopener">fokusin</a></h3>
-        <p>Indonesian Pomodoro timer. Offline, no account, no ads. Vanilla JS, 154 KB, drift-free.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/fokusin" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="daily" data-repo="islamcal">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/islamcal" rel="noopener">islamcal</a></h3>
-        <p>Islamic calculators in one place: zakat, inheritance, prayer times, Hijri calendar. Offline PWA.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/islamcal" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="daily" data-repo="qurbanq">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/qurbanq" rel="noopener">qurbanq</a></h3>
-        <p>Group-purchase and savings calculator for qurban, with fiqh notes. PWA.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/qurbanq" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="daily" data-repo="mbgcalc">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/mbgcalc" rel="noopener">mbgcalc</a></h3>
-        <p>Converts a Rupiah amount into portions and duration of the free nutritious meals programme.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/mbgcalc" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="daily" data-repo="notaq">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/notaq" rel="noopener">notaq</a></h3>
-        <p>Quick local notes in the browser. No login.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/notaq" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="daily" data-repo="kuitansi-kilat">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/kuitansi-kilat" rel="noopener">kuitansi-kilat</a></h3>
-        <p>Instant receipt maker that exports to PDF. No login.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/kuitansi-kilat" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="daily" data-repo="qr-ku">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/qr-ku" rel="noopener">qr-ku</a></h3>
-        <p>QR code generator for WiFi, WhatsApp, vCard and menus. Free and private.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/qr-ku" rel="noopener">Source</a><a class="link" href="https://qr-ku.pages.dev" rel="noopener">Live</a></div>
-      </article>
-      <article class="card" data-cat="daily" data-repo="dot-mail">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/dot-mail" rel="noopener">dot-mail</a></h3>
-        <p>Gmail dot-trick generator. Every variation, browser-only.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/dot-mail" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="daily" data-repo="genpass">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/genpass" rel="noopener">genpass</a></h3>
-        <p>Password generator. PWA, SEO-optimised.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/genpass" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="ai" data-repo="prompt">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/prompt" rel="noopener">prompt</a></h3>
-        <p>Promptly: a local-first AI prompt library with nested categories, drag and drop, and variable filling.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/prompt" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="ai" data-repo="dapurpintar">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/dapurpintar" rel="noopener">dapurpintar</a></h3>
-        <p>AI recipe suggestions from the ingredients you already have. Free, no login.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/dapurpintar" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="ai" data-repo="ga-kit">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/ga-kit" rel="noopener">ga-kit</a></h3>
-        <p>Free PWA toolkit for Google Advertisers. No signup, runs locally.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/ga-kit" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="ai" data-repo="spec-kit">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="Markdown"></i>Markdown</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/spec-kit" rel="noopener">spec-kit</a></h3>
-        <p>Spec-driven development kit for AI coding agents: three mega-spec templates, engineering standards and 11 operational guides.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/spec-kit" rel="noopener">Source</a></div>
-      </article>
-      <article class="card" data-cat="ai" data-repo="pinescriptv6">
-        <div class="card-top"><span class="lang"><i class="dot" data-lang="Markdown"></i>Markdown</span><time data-pushed></time></div>
-        <h3><a href="https://github.com/alfindigital/pinescriptv6" rel="noopener">pinescriptv6</a></h3>
-        <p>Full Pine Script v6 reference as one markdown file, written for LLMs to ingest.</p>
-        <div class="card-links"><a class="link" href="https://github.com/alfindigital/pinescriptv6" rel="noopener">Source</a></div>
-      </article>
+        <div class="shot-caption t-stagger is-shown" id="caption">
+          <h2 class="cap-title t-stagger-line t-stagger-line--1" id="cap-title">Fokusin</h2>
+          <p class="t-stagger-line t-stagger-line--2" id="cap-desc">A Pomodoro timer in Bahasa Indonesia. It works offline, needs no account, and the whole app is 154 KB of vanilla JavaScript.</p>
+          <div class="shot-links t-stagger-line t-stagger-line--3">
+            <a class="link t-learn" id="cap-live" href="https://fokusin.pages.dev" rel="noopener">Open live <span class="t-learn-chevron"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
+            <a class="link" id="cap-repo" href="https://github.com/alfindigital/fokusin" rel="noopener">Source</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="activity" class="rule-top">
+  <section id="work">
     <div class="wrap">
-      <div class="sec-head">
-        <h2>Activity</h2>
-        <p id="activity-note">Contribution graph for the last 12 months, loaded from GitHub.</p>
-      </div>
-      <div class="graph reveal" id="graph" data-state="off">
-        <div class="heat" id="heat" aria-hidden="true"></div>
-        <p class="fallback">The contribution graph could not be loaded right now. The full history is on <a class="link" href="https://github.com/alfindigital" rel="noopener">GitHub</a>.</p>
-        <div class="heat-meta">
-          <span class="label" id="heat-total">—</span>
-          <span class="legend" aria-hidden="true">Less<span></span><i></i><i></i><i></i><i></i><i></i><span></span>More</span>
+      <div class="index-head reveal">
+        <h2>The work, indexed.</h2>
+        <div class="tabs-scroll">
+          <div class="t-tabs" id="filter-tabs" role="tablist" aria-label="Filter projects">
+            <span class="t-tabs-pill" aria-hidden="true"></span>
+          <button class="t-tab" role="tab" aria-selected="true" data-filter="all">All <span class="count">24</span></button>
+          <button class="t-tab" role="tab" aria-selected="false" data-filter="markets">Markets <span class="count">9</span></button>
+          <button class="t-tab" role="tab" aria-selected="false" data-filter="daily">Daily tools <span class="count">10</span></button>
+          <button class="t-tab" role="tab" aria-selected="false" data-filter="ai">AI &amp; dev <span class="count">5</span></button>
+          </div>
         </div>
       </div>
-      <div id="langs" class="graph reveal" style="margin-top:14px" hidden>
-        <span class="label">Languages across public repos</span>
-        <div class="langbar" id="langbar" role="img" aria-label="Language share bar"></div>
-        <ul class="langlist" id="langlist"></ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="approach" class="band">
-    <div class="wrap">
-      <p class="label">How I build</p>
-      <h2 style="margin-top:12px;max-width:20ch">Small, local and quick to open.</h2>
-      <div class="principles">
-        <div class="principle">
-          <h3>Offline first</h3>
-          <p>Most tools are PWAs that keep working without a connection. Try <code>fokusin</code>, <code>scalc</code> or <code>islamcal</code>.</p>
-        </div>
-        <div class="principle">
-          <h3>No account needed</h3>
-          <p>Tasks, notes and receipts stay in your browser. See <code>beres</code>, <code>notaq</code> and <code>kuitansi-kilat</code>.</p>
-        </div>
-        <div class="principle">
-          <h3>Light on dependencies</h3>
-          <p><code>fokusin</code> is 154 KB of vanilla JS. <code>beres</code> has zero dependencies.</p>
-        </div>
-      </div>
-      <ul class="stack" aria-label="Tools">
-        <li>TypeScript</li><li>JavaScript</li><li>Python</li><li>PWA</li><li>Vercel</li><li>Cloudflare Pages</li><li>GitHub Pages</li><li>AI coding agents</li>
+      <ul class="rows" id="rows-a">
+          <li class="row" data-cat="markets" data-repo="adimology">
+            <a class="row-main" href="https://github.com/alfindigital/adimology" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-chart-line-up"/></svg></span>
+              <span class="row-body"><span class="row-name">adimology</span><span class="row-desc">Analyses IDX stock target prices from broker transaction data. Algorithm credit: Adi Sucipto's methodology.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="markets" data-repo="radar-x">
+            <a class="row-main" href="https://github.com/alfindigital/radar-x" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-chart-line-up"/></svg></span>
+              <span class="row-body"><span class="row-name">radar-x</span><span class="row-desc">Position map of IDX smart money (insiders, institutions, foreign) for swing traders.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="markets" data-repo="right-issue">
+            <a class="row-main" href="https://github.com/alfindigital/right-issue" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-calculator"/></svg></span>
+              <span class="row-body"><span class="row-name">right-issue</span><span class="row-desc">Bilingual rights-issue (HMETD) calculator for IDX stocks.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            <a class="link row-live t-learn" href="https://lotmetrik.my.id" rel="noopener" aria-label="Open right-issue live">Live <span class="t-learn-chevron"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
+          </li>
+          <li class="row" data-cat="markets" data-repo="lotmetrik-des">
+            <a class="row-main" href="https://github.com/alfindigital/lotmetrik-des" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-chart-line-up"/></svg></span>
+              <span class="row-body"><span class="row-name">lotmetrik-des</span><span class="row-desc">Dashboard of the IDX Sharia-compliant securities list, 2016 to 2026.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="HTML"></i>HTML</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            <a class="link row-live t-learn" href="https://des.lotmetrik.my.id" rel="noopener" aria-label="Open lotmetrik-des live">Live <span class="t-learn-chevron"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
+          </li>
+          <li class="row" data-cat="markets" data-repo="idx-avg">
+            <a class="row-main" href="https://github.com/alfindigital/idx-avg" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-calculator"/></svg></span>
+              <span class="row-body"><span class="row-name">idx-avg</span><span class="row-desc">Averaging calculator for IDX stocks, built mobile-first as a PWA.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="Python"></i>Python</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="markets" data-repo="scalc">
+            <a class="row-main" href="https://github.com/alfindigital/scalc" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-calculator"/></svg></span>
+              <span class="row-body"><span class="row-name">scalc</span><span class="row-desc">Simple IDX stock calculator for lots, P&amp;L and break-even, as an offline PWA.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="markets" data-repo="ddcal">
+            <a class="row-main" href="https://github.com/alfindigital/ddcal" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-calculator"/></svg></span>
+              <span class="row-body"><span class="row-name">ddcal</span><span class="row-desc">Drawdown recovery calculator for traders, as an offline PWA.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="markets" data-repo="makerheat">
+            <a class="row-main" href="https://github.com/alfindigital/makerheat" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-chart-line-up"/></svg></span>
+              <span class="row-body"><span class="row-name">makerheat</span><span class="row-desc">Shows which addresses carried the observed volume of a DEX contract, descriptive only.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            <a class="link row-live t-learn" href="https://makerheat.vercel.app" rel="noopener" aria-label="Open makerheat live">Live <span class="t-learn-chevron"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
+          </li>
       </ul>
+      <div class="t-acc" id="acc" data-open="false">
+        <div class="t-acc-panel" id="acc-panel">
+          <div class="t-acc-panel-inner" id="acc-inner" inert>
+            <ul class="rows" style="border-top:0" id="rows-b">
+          <li class="row" data-cat="markets" data-repo="verdex">
+            <a class="row-main" href="https://github.com/alfindigital/verdex" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-check-square"/></svg></span>
+              <span class="row-body"><span class="row-name">verdex</span><span class="row-desc">Crypto token verdicts built from on-chain evidence, each claim tied to a hashed receipt.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            <a class="link row-live t-learn" href="https://verdex-alpha.vercel.app" rel="noopener" aria-label="Open verdex live">Live <span class="t-learn-chevron"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
+          </li>
+          <li class="row" data-cat="daily" data-repo="beres">
+            <a class="row-main" href="https://github.com/alfindigital/beres" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-check-square"/></svg></span>
+              <span class="row-body"><span class="row-name">beres</span><span class="row-desc">Indonesian to-do list that turns a typed sentence into a task, offline, with no account and zero dependencies.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="JavaScript"></i>JavaScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="daily" data-repo="fokusin">
+            <a class="row-main" href="https://github.com/alfindigital/fokusin" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg></span>
+              <span class="row-body"><span class="row-name">fokusin</span><span class="row-desc">Indonesian Pomodoro timer that works offline with no account and no ads, in 154 KB of vanilla JS.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="JavaScript"></i>JavaScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            <a class="link row-live t-learn" href="https://fokusin.pages.dev" rel="noopener" aria-label="Open fokusin live">Live <span class="t-learn-chevron"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
+          </li>
+          <li class="row" data-cat="daily" data-repo="islamcal">
+            <a class="row-main" href="https://github.com/alfindigital/islamcal" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-calculator"/></svg></span>
+              <span class="row-body"><span class="row-name">islamcal</span><span class="row-desc">Islamic calculators in one place: zakat, inheritance, prayer times, Hijri calendar. Offline PWA.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="daily" data-repo="qurbanq">
+            <a class="row-main" href="https://github.com/alfindigital/qurbanq" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-calculator"/></svg></span>
+              <span class="row-body"><span class="row-name">qurbanq</span><span class="row-desc">Group-purchase and savings calculator for qurban, with fiqh notes. PWA.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="daily" data-repo="mbgcalc">
+            <a class="row-main" href="https://github.com/alfindigital/mbgcalc" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-calculator"/></svg></span>
+              <span class="row-body"><span class="row-name">mbgcalc</span><span class="row-desc">Converts a Rupiah amount into portions and duration of the free nutritious meals programme.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="daily" data-repo="notaq">
+            <a class="row-main" href="https://github.com/alfindigital/notaq" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-note-pencil"/></svg></span>
+              <span class="row-body"><span class="row-name">notaq</span><span class="row-desc">Quick notes that stay local in the browser, with no login.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="daily" data-repo="kuitansi-kilat">
+            <a class="row-main" href="https://github.com/alfindigital/kuitansi-kilat" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-receipt"/></svg></span>
+              <span class="row-body"><span class="row-name">kuitansi-kilat</span><span class="row-desc">Instant receipt maker that exports to PDF, with no login.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="daily" data-repo="qr-ku">
+            <a class="row-main" href="https://github.com/alfindigital/qr-ku" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-qr-code"/></svg></span>
+              <span class="row-body"><span class="row-name">qr-ku</span><span class="row-desc">Free, private QR code generator for WiFi, WhatsApp, vCard and menus.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="daily" data-repo="dot-mail">
+            <a class="row-main" href="https://github.com/alfindigital/dot-mail" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-envelope-simple"/></svg></span>
+              <span class="row-body"><span class="row-name">dot-mail</span><span class="row-desc">Gmail dot-trick generator that lists every variation, entirely in the browser.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="daily" data-repo="genpass">
+            <a class="row-main" href="https://github.com/alfindigital/genpass" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-key"/></svg></span>
+              <span class="row-body"><span class="row-name">genpass</span><span class="row-desc">Password generator built as a PWA and optimised for search.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="ai" data-repo="prompt">
+            <a class="row-main" href="https://github.com/alfindigital/prompt" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-chat-text"/></svg></span>
+              <span class="row-body"><span class="row-name">prompt</span><span class="row-desc">Promptly: a local-first AI prompt library with nested categories, drag and drop and variable filling.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="ai" data-repo="dapurpintar">
+            <a class="row-main" href="https://github.com/alfindigital/dapurpintar" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-cooking-pot"/></svg></span>
+              <span class="row-body"><span class="row-name">dapurpintar</span><span class="row-desc">AI recipe suggestions from the ingredients you already have, free and with no login.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="ai" data-repo="ga-kit">
+            <a class="row-main" href="https://github.com/alfindigital/ga-kit" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-toolbox"/></svg></span>
+              <span class="row-body"><span class="row-name">ga-kit</span><span class="row-desc">Free PWA toolkit for Google Advertisers that runs locally with no signup.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="ai" data-repo="spec-kit">
+            <a class="row-main" href="https://github.com/alfindigital/spec-kit" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-file-text"/></svg></span>
+              <span class="row-body"><span class="row-name">spec-kit</span><span class="row-desc">Spec-driven development kit for AI coding agents: three mega-spec templates, engineering standards and 11 operational guides.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="Markdown"></i>Markdown</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+          <li class="row" data-cat="ai" data-repo="pinescriptv6">
+            <a class="row-main" href="https://github.com/alfindigital/pinescriptv6" rel="noopener">
+              <span class="row-icon"><svg class="ic" aria-hidden="true"><use href="#i-file-code"/></svg></span>
+              <span class="row-body"><span class="row-name">pinescriptv6</span><span class="row-desc">Full Pine Script v6 reference as one markdown file, written for LLMs to ingest.</span></span>
+              <span class="row-meta"><span class="lang"><i class="dot" data-lang="Markdown"></i>Markdown</span><time data-pushed></time><svg class="ic row-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </a>
+            
+          </li>
+            </ul>
+          </div>
+        </div>
+        <div class="more" id="more">
+          <button class="btn btn--quiet t-acc-head" id="acc-head" type="button" aria-expanded="false" aria-controls="acc-panel">
+            <span id="acc-label">Show 16 more</span>
+            <span class="t-acc-chevron"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6.5L8 10.5L12 6.5"/></svg></span>
+          </button>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="activity">
     <div class="wrap">
-      <div class="contact">
-        <div>
-          <h2>Get in touch</h2>
-          <p>Email is the fastest way. Source code and issues live on GitHub.</p>
+      <div class="sec-head reveal">
+        <h2>Live from GitHub.</h2>
+        <p>These numbers load from GitHub when you open the page.</p>
+      </div>
+      <div class="live reveal" id="live" data-state="loading">
+        <div class="figures">
+          <div class="figure"><b><span class="t-digit-group" id="fig-repos">…</span></b><span>Public repositories</span></div>
+          <div class="figure"><b><span class="t-digit-group" id="fig-contrib">…</span></b><span>Contributions, last year</span></div>
+          <div class="figure"><b><span class="t-digit-group" id="fig-followers">…</span></b><span>Followers</span></div>
         </div>
-        <div class="cta" style="margin:0">
-          <a class="btn btn--primary" href="mailto:gmail@alfindigital.com">gmail@alfindigital.com</a>
-          <a class="btn" href="https://github.com/alfindigital" rel="noopener">GitHub profile</a>
+        <div class="t-skel" id="skel" data-state="loading">
+          <div class="t-skel-skeleton is-pulsing" aria-hidden="true"><i></i><i></i></div>
+          <div class="t-skel-content">
+            <div class="heat" id="heat" role="img" aria-label="Contribution graph for the last year"></div>
+            <div class="heat-meta">
+              <span id="heat-note">Each square is one day.</span>
+              <span class="legend" aria-hidden="true">Less<span></span><i></i><i></i><i></i><i></i><i></i><span></span>More</span>
+            </div>
+          </div>
         </div>
+        <div class="langwrap" id="langs" hidden>
+          <div class="langbar" id="langbar" role="img" aria-label="Language share across public repositories"></div>
+          <ul class="langlist" id="langlist"></ul>
+        </div>
+        <p class="live-error">GitHub did not answer just now. The full history is on <a class="link" href="https://github.com/alfindigital" rel="noopener">github.com/alfindigital</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="try">
+    <div class="wrap">
+      <div class="demo">
+        <div class="sec-head reveal" style="margin:0">
+          <h2>Type it like you'd say it.</h2>
+          <p>A simplified take on beres, my Indonesian to-do app. Write a task in plain words and it picks out the date, time, priority and tag.</p>
+        </div>
+        <div class="demo-card reveal">
+          <form class="demo-form" id="demo-form" autocomplete="off">
+            <label class="sr" for="demo-input">New task</label>
+            <input class="demo-input" id="demo-input" type="text" placeholder="bayar kos besok jam 9 !p1 #keuangan" enterkeyhint="done" spellcheck="false">
+            <button class="btn btn--primary" type="submit">Add</button>
+          </form>
+          <p class="demo-hint">Words it understands: hari ini, besok, lusa, jam 14.30, !p1 to !p3, #tag. Nothing is saved.</p>
+          <ul class="tasks" id="tasks" aria-live="polite"></ul>
+          <p class="tasks-empty" id="tasks-empty" hidden>No tasks yet. Type one above.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="statement reveal"><a href="https://github.com/alfindigital/fokusin" rel="noopener">Fokusin</a> is <strong>154 KB</strong> and <a href="https://github.com/alfindigital/beres" rel="noopener">beres</a> has <strong>zero dependencies</strong>, because most of what I ship should work offline and never ask you to sign up.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="reveal">Say hello.</h2>
+      <a class="mail reveal" href="mailto:gmail@alfindigital.com">gmail@alfindigital.com</a>
+      <div class="cta reveal">
+        <button class="btn btn--primary" id="copy-mail" type="button">
+          <span class="t-icon-swap" id="copy-swap" data-state="a"><span class="t-icon" data-icon="a"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg></span><span class="t-icon" data-icon="b"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span>
+          Copy email
+        </button>
+        <a class="btn btn--quiet" href="https://github.com/alfindigital" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-github-logo"/></svg> GitHub</a>
       </div>
     </div>
   </section>
@@ -286,17 +394,17 @@
 <footer>
   <div class="wrap">
     <span>&copy; 2026 Alfin</span>
-    <span>GitHub data loads live in your browser from api.github.com. Hosted on GitHub Pages.</span>
+    <span>GitHub data loads live from api.github.com. Hosted on GitHub Pages.</span>
   </div>
 </footer>
 
-<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Command menu" hidden>
-  <div class="pal">
-    <input id="pal-input" type="text" placeholder="Type a command or search" autocomplete="off" spellcheck="false" aria-controls="pal-list" aria-label="Search commands">
-    <ul id="pal-list" role="listbox"></ul>
+<div class="scrim" id="scrim" hidden>
+  <div class="t-modal" id="pal" role="dialog" aria-modal="true" aria-label="Command menu">
+    <div class="pal-field"><svg class="ic" aria-hidden="true"><use href="#i-magnifying-glass"/></svg><input id="pal-input" type="text" placeholder="Search" autocomplete="off" spellcheck="false" aria-label="Search commands" aria-controls="pal-list"></div>
+    <ul class="pal-list" id="pal-list" role="listbox"></ul>
   </div>
 </div>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="t-toast" id="toast" role="status" aria-live="polite"></div>
 
 <script src="app.js" defer></script>
 </body>
