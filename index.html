@@ -3,85 +3,301 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alfin — Software Developer</title>
-<meta name="description" content="Developer portfolio of Alfin (alfindigital): Telegram bots, data pipelines, web tools, and AI automation infrastructure.">
-<meta name="color-scheme" content="light dark">
+<title>Alfin — Software &amp; AI Developer</title>
+<meta name="description" content="Alfin (alfindigital): open-source web tools, market-data utilities and AI developer kits. Live from GitHub.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f9fafc">
+<meta property="og:title" content="Alfin — Software &amp; AI Developer">
+<meta property="og:description" content="Open-source web tools, market-data utilities and AI developer kits.">
+<meta property="og:type" content="website">
 <link rel="canonical" href="https://alfin.is-a.dev/">
-<style>
-:root{--bg:#f7f6f2;--fg:#17181a;--mute:#5d6168;--line:#dcdad2;--card:#fff;--accent:#0b6b5d}
-@media (prefers-color-scheme:dark){:root{--bg:#101214;--fg:#ecebe6;--mute:#9aa0a8;--line:#272b30;--card:#171a1d;--accent:#4fd1b8}}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:56px 20px 72px}
-h1{font-size:clamp(2rem,6vw,2.75rem);line-height:1.1;margin:0 0 8px;letter-spacing:-.02em}
-h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mute);margin:48px 0 16px;font-weight:600}
-p{margin:0 0 14px}
-.lead{font-size:1.15rem;color:var(--mute);max-width:56ch}
-a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
-nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px}
-.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
-.card h3{margin:0 0 6px;font-size:1rem}
-.card p{margin:0;color:var(--mute);font-size:.94rem}
-ul.stack{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
-ul.stack li{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.88rem;background:var(--card)}
-footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--mute);font-size:.88rem}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header>
-    <h1>Alfin</h1>
-    <p class="lead">Software developer from Indonesia. I build bots, data pipelines and small web tools, and the automation infrastructure that keeps them running.</p>
-    <nav aria-label="Links">
-      <a href="https://github.com/alfindigital">GitHub</a>
-      <a href="mailto:gmail@alfindigital.com">Email</a>
-    </nav>
-  </header>
+<a class="skip" href="#work">Skip to work</a>
 
-  <section aria-labelledby="work">
-    <h2 id="work">What I build</h2>
-    <div class="grid">
-      <article class="card">
-        <h3>Telegram bots</h3>
-        <p>Alerting and information bots built on the Telegram Bot API, running as managed services with monitoring.</p>
-      </article>
-      <article class="card">
-        <h3>Data pipelines &amp; scrapers</h3>
-        <p>Collection, cleaning and delivery of public market and web data, with rate limiting and retry handling.</p>
-      </article>
-      <article class="card">
-        <h3>Web tools &amp; PWAs</h3>
-        <p>Small, fast, installable utilities and calculators that work offline and load without a framework.</p>
-      </article>
-      <article class="card">
-        <h3>AI automation infra</h3>
-        <p>MCP servers, agent tooling and shared memory so several AI assistants work from one source of truth.</p>
-      </article>
-      <article class="card">
-        <h3>Server operations</h3>
-        <p>VPS deployment, systemd services, backups and health checks, with zero-downtime changes as the default.</p>
-      </article>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">alfindigital</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#activity">Activity</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cmdk" type="button" id="open-palette" aria-haspopup="dialog" aria-label="Open command menu">
+      <span>Search</span><kbd id="kbd-hint">Ctrl K</kbd>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow label"><span>Developer &middot; Indonesia</span></p>
+        <h1>Software and AI tools that ship.</h1>
+        <p class="lede">I'm Alfin. I build offline-first web tools, market-data utilities and developer kits for AI coding agents, and I publish them on GitHub.</p>
+        <div class="cta">
+          <a class="btn btn--primary" href="#work">See the work</a>
+          <a class="btn" href="https://github.com/alfindigital" rel="noopener">github.com/alfindigital</a>
+        </div>
+      </div>
+
+      <figure class="code-card" style="margin:0" aria-label="Live response from the GitHub API for this profile">
+        <div class="code-bar">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="file">GET api.github.com/users/alfindigital</span>
+          <span class="status" id="api-status" data-state="snapshot">SNAPSHOT</span>
+        </div>
+        <pre class="code-body" id="api-body"><span class="ln"><span class="t-dim">{</span></span><span class="ln">  <span class="t-key">"login"</span>: <span class="t-str" data-k="login">"alfindigital"</span>,</span><span class="ln">  <span class="t-key">"name"</span>: <span class="t-str" data-k="name">"Muhammad Alfin Assyidiq"</span>,</span><span class="ln">  <span class="t-key">"bio"</span>: <span class="t-str" data-k="bio">"Software &amp; AI Creator"</span>,</span><span class="ln">  <span class="t-key">"location"</span>: <span class="t-str" data-k="location">"Indonesia"</span>,</span><span class="ln">  <span class="t-key">"public_repos"</span>: <span class="t-num" data-k="public_repos">43</span>,</span><span class="ln">  <span class="t-key">"followers"</span>: <span class="t-num" data-k="followers">7</span>,</span><span class="ln">  <span class="t-key">"created_at"</span>: <span class="t-str" data-k="created_at">"2018-12-14"</span></span><span class="ln"><span class="t-dim">}</span></span></pre>
+      </figure>
     </div>
   </section>
 
-  <section aria-labelledby="stack">
-    <h2 id="stack">Tools I use</h2>
-    <ul class="stack">
-      <li>Python</li><li>JavaScript / TypeScript</li><li>Node.js</li><li>PowerShell &amp; Bash</li>
-      <li>Telegram Bot API</li><li>REST APIs</li><li>SQLite &amp; PostgreSQL</li><li>Linux / systemd</li>
-      <li>Git &amp; GitHub Actions</li><li>Vercel &amp; Cloudflare</li><li>Model Context Protocol</li>
-    </ul>
+  <section class="rule-top" aria-label="GitHub numbers" style="padding:40px 0">
+    <div class="wrap">
+      <div class="stats reveal">
+        <div class="stat"><b data-stat="public_repos">43</b><span class="label">Public repos</span></div>
+        <div class="stat"><b data-stat="followers">7</b><span class="label">Followers</span></div>
+        <div class="stat"><b data-stat="since">2018</b><span class="label">On GitHub since</span></div>
+        <div class="stat"><b data-stat="contribs">—</b><span class="label">Contributions, last year</span></div>
+      </div>
+    </div>
   </section>
 
-  <section aria-labelledby="about">
-    <h2 id="about">About this site</h2>
-    <p>This is a personal developer profile. Most of my repositories are private, so the public record lives at <a href="https://github.com/alfindigital">github.com/alfindigital</a>. I will publish the parts that are ready to share there.</p>
+  <section id="work" class="rule-top">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2>Selected work</h2>
+        </div>
+        <p>Public repositories, straight from GitHub. Most are PWAs that run in the browser with no account.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">All<span class="n">22</span></button>
+        <button class="chip" type="button" data-filter="markets" aria-pressed="false">Markets<span class="n">7</span></button>
+        <button class="chip" type="button" data-filter="daily" aria-pressed="false">Daily tools<span class="n">10</span></button>
+        <button class="chip" type="button" data-filter="ai" aria-pressed="false">AI &amp; dev<span class="n">5</span></button>
+      </div>
+      <div class="grid" id="grid">
+      <article class="card" data-cat="markets" data-repo="adimology">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/adimology" rel="noopener">adimology</a></h3>
+        <p>Web app that analyses IDX stock target prices from broker transaction data. Algorithm credit: Adi Sucipto's methodology.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/adimology" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="markets" data-repo="radar-x">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/radar-x" rel="noopener">radar-x</a></h3>
+        <p>Position map of IDX smart money (insiders, institutions, foreign) for swing traders.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/radar-x" rel="noopener">Source</a><a class="link" href="https://radar-x-beta.vercel.app" rel="noopener">Live</a></div>
+      </article>
+      <article class="card" data-cat="markets" data-repo="right-issue">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/right-issue" rel="noopener">right-issue</a></h3>
+        <p>Rights-issue (HMETD) calculator for IDX stocks. Bilingual.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/right-issue" rel="noopener">Source</a><a class="link" href="https://lotmetrik.my.id" rel="noopener">Live</a></div>
+      </article>
+      <article class="card" data-cat="markets" data-repo="lotmetrik-des">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="HTML"></i>HTML</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/lotmetrik-des" rel="noopener">lotmetrik-des</a></h3>
+        <p>Dashboard of the IDX Sharia-compliant securities list (DES), 2016 to 2026.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/lotmetrik-des" rel="noopener">Source</a><a class="link" href="https://des.lotmetrik.my.id" rel="noopener">Live</a></div>
+      </article>
+      <article class="card" data-cat="markets" data-repo="idx-avg">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="Python"></i>Python</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/idx-avg" rel="noopener">idx-avg</a></h3>
+        <p>Averaging calculator for IDX stocks. Mobile-first PWA.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/idx-avg" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="markets" data-repo="scalc">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/scalc" rel="noopener">scalc</a></h3>
+        <p>Simple IDX stock calculator: lots, P&amp;L, break-even. Offline PWA.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/scalc" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="markets" data-repo="ddcal">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/ddcal" rel="noopener">ddcal</a></h3>
+        <p>Drawdown recovery calculator for traders. Offline PWA.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/ddcal" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="daily" data-repo="beres">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="JavaScript"></i>JavaScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/beres" rel="noopener">beres</a></h3>
+        <p>Indonesian to-do list. Type a sentence, get a task. Offline, no account, zero dependencies.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/beres" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="daily" data-repo="fokusin">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="JavaScript"></i>JavaScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/fokusin" rel="noopener">fokusin</a></h3>
+        <p>Indonesian Pomodoro timer. Offline, no account, no ads. Vanilla JS, 154 KB, drift-free.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/fokusin" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="daily" data-repo="islamcal">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/islamcal" rel="noopener">islamcal</a></h3>
+        <p>Islamic calculators in one place: zakat, inheritance, prayer times, Hijri calendar. Offline PWA.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/islamcal" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="daily" data-repo="qurbanq">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/qurbanq" rel="noopener">qurbanq</a></h3>
+        <p>Group-purchase and savings calculator for qurban, with fiqh notes. PWA.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/qurbanq" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="daily" data-repo="mbgcalc">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/mbgcalc" rel="noopener">mbgcalc</a></h3>
+        <p>Converts a Rupiah amount into portions and duration of the free nutritious meals programme.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/mbgcalc" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="daily" data-repo="notaq">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/notaq" rel="noopener">notaq</a></h3>
+        <p>Quick local notes in the browser. No login.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/notaq" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="daily" data-repo="kuitansi-kilat">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/kuitansi-kilat" rel="noopener">kuitansi-kilat</a></h3>
+        <p>Instant receipt maker that exports to PDF. No login.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/kuitansi-kilat" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="daily" data-repo="qr-ku">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/qr-ku" rel="noopener">qr-ku</a></h3>
+        <p>QR code generator for WiFi, WhatsApp, vCard and menus. Free and private.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/qr-ku" rel="noopener">Source</a><a class="link" href="https://qr-ku.pages.dev" rel="noopener">Live</a></div>
+      </article>
+      <article class="card" data-cat="daily" data-repo="dot-mail">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/dot-mail" rel="noopener">dot-mail</a></h3>
+        <p>Gmail dot-trick generator. Every variation, browser-only.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/dot-mail" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="daily" data-repo="genpass">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/genpass" rel="noopener">genpass</a></h3>
+        <p>Password generator. PWA, SEO-optimised.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/genpass" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="ai" data-repo="prompt">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/prompt" rel="noopener">prompt</a></h3>
+        <p>Promptly: a local-first AI prompt library with nested categories, drag and drop, and variable filling.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/prompt" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="ai" data-repo="dapurpintar">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/dapurpintar" rel="noopener">dapurpintar</a></h3>
+        <p>AI recipe suggestions from the ingredients you already have. Free, no login.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/dapurpintar" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="ai" data-repo="ga-kit">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="TypeScript"></i>TypeScript</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/ga-kit" rel="noopener">ga-kit</a></h3>
+        <p>Free PWA toolkit for Google Advertisers. No signup, runs locally.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/ga-kit" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="ai" data-repo="spec-kit">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="Markdown"></i>Markdown</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/spec-kit" rel="noopener">spec-kit</a></h3>
+        <p>Spec-driven development kit for AI coding agents: three mega-spec templates, engineering standards and 11 operational guides.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/spec-kit" rel="noopener">Source</a></div>
+      </article>
+      <article class="card" data-cat="ai" data-repo="pinescriptv6">
+        <div class="card-top"><span class="lang"><i class="dot" data-lang="Markdown"></i>Markdown</span><time data-pushed></time></div>
+        <h3><a href="https://github.com/alfindigital/pinescriptv6" rel="noopener">pinescriptv6</a></h3>
+        <p>Full Pine Script v6 reference as one markdown file, written for LLMs to ingest.</p>
+        <div class="card-links"><a class="link" href="https://github.com/alfindigital/pinescriptv6" rel="noopener">Source</a></div>
+      </article>
+      </div>
+    </div>
   </section>
 
-  <footer>Alfin &middot; <a href="https://github.com/alfindigital">alfindigital</a> &middot; Hosted on GitHub Pages at alfin.is-a.dev</footer>
+  <section id="activity" class="rule-top">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Activity</h2>
+        <p id="activity-note">Contribution graph for the last 12 months, loaded from GitHub.</p>
+      </div>
+      <div class="graph reveal" id="graph" data-state="off">
+        <div class="heat" id="heat" aria-hidden="true"></div>
+        <p class="fallback">The contribution graph could not be loaded right now. The full history is on <a class="link" href="https://github.com/alfindigital" rel="noopener">GitHub</a>.</p>
+        <div class="heat-meta">
+          <span class="label" id="heat-total">—</span>
+          <span class="legend" aria-hidden="true">Less<span></span><i></i><i></i><i></i><i></i><i></i><span></span>More</span>
+        </div>
+      </div>
+      <div id="langs" class="graph reveal" style="margin-top:14px" hidden>
+        <span class="label">Languages across public repos</span>
+        <div class="langbar" id="langbar" role="img" aria-label="Language share bar"></div>
+        <ul class="langlist" id="langlist"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="band">
+    <div class="wrap">
+      <p class="label">How I build</p>
+      <h2 style="margin-top:12px;max-width:20ch">Small, local and quick to open.</h2>
+      <div class="principles">
+        <div class="principle">
+          <h3>Offline first</h3>
+          <p>Most tools are PWAs that keep working without a connection. Try <code>fokusin</code>, <code>scalc</code> or <code>islamcal</code>.</p>
+        </div>
+        <div class="principle">
+          <h3>No account needed</h3>
+          <p>Tasks, notes and receipts stay in your browser. See <code>beres</code>, <code>notaq</code> and <code>kuitansi-kilat</code>.</p>
+        </div>
+        <div class="principle">
+          <h3>Light on dependencies</h3>
+          <p><code>fokusin</code> is 154 KB of vanilla JS. <code>beres</code> has zero dependencies.</p>
+        </div>
+      </div>
+      <ul class="stack" aria-label="Tools">
+        <li>TypeScript</li><li>JavaScript</li><li>Python</li><li>PWA</li><li>Vercel</li><li>Cloudflare Pages</li><li>GitHub Pages</li><li>AI coding agents</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h2>Get in touch</h2>
+          <p>Email is the fastest way. Source code and issues live on GitHub.</p>
+        </div>
+        <div class="cta" style="margin:0">
+          <a class="btn btn--primary" href="mailto:gmail@alfindigital.com">gmail@alfindigital.com</a>
+          <a class="btn" href="https://github.com/alfindigital" rel="noopener">GitHub profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Alfin</span>
+    <span>GitHub data loads live in your browser from api.github.com. Hosted on GitHub Pages.</span>
+  </div>
+</footer>
+
+<div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Command menu" hidden>
+  <div class="pal">
+    <input id="pal-input" type="text" placeholder="Type a command or search" autocomplete="off" spellcheck="false" aria-controls="pal-list" aria-label="Search commands">
+    <ul id="pal-list" role="listbox"></ul>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js" defer></script>
 </body>
 </html>
